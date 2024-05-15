@@ -20,7 +20,7 @@ class TicketController extends ApiController
         // checking if the include parameter is set in the url e.g. /api/v1/tickets?include=author
         // then we return the tickets with the user relationship
         if($this->includeRelation('author')){
-            return TicketResource::collection(User::with('tickets')->paginate());
+            return TicketResource::collection(Ticket::with('User')->paginate());
         }
         return TicketResource::collection(Ticket::paginate());
     }

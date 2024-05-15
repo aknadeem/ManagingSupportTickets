@@ -40,6 +40,7 @@ class UserResource extends JsonResource
 //                    $this->created_at
 //                ),
             ],
+            'includes' => TicketResource::collection($this->whenLoaded('tickets')),
             'links' => [
                 'self' => route('users.show', ['user' => $this->id]),
             ],
