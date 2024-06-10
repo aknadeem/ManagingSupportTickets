@@ -12,12 +12,14 @@ use App\Http\Resources\V1\TicketResource;
 use App\Http\Resources\V1\UserResource;
 use App\Models\Ticket;
 use App\Models\User;
-use App\Traits\ApiResponses;
+use App\Policies\V1\TicketPolicy;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class TicketController extends ApiController
 {
-    use ApiResponses;
+
+    protected $policyClass = TicketPolicy::class;
     /**
      * Display a listing of the resource.
      */
@@ -88,12 +90,15 @@ class TicketController extends ApiController
 //                'user_id' => $request->input('data.relationships.user.data.id'),
 //            ];
 
+            $this->isAble('update', $ticket);
             $ticket->update($request->mappedAttributes());
 
             return new TicketResource($ticket);
 
         } catch (ModelNotFoundException $e) {
             return $this->responseError('Ticket cannot be found', 404);
+        } catch (AuthorizationException $e) {
+            return $this->responseError('You are not authorized to update that resource', 401);
         }
     }
 
