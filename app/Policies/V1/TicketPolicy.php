@@ -2,6 +2,8 @@
 
 namespace App\Policies\V1;
 
+use App\Models\Ticket;
+use App\Models\User;
 use App\Permissions\V1\Abilities;
 
 class TicketPolicy
@@ -12,7 +14,17 @@ class TicketPolicy
         //
     }
 
-    public function update($user, $ticket)
+    public function store(User $user)
+    {
+        return $user->tokenCan(Abilities::CREATE_TICKET) || $user->tokenCan(Abilities::CREATE_OWN_TICKET);
+    }
+
+    public function replcae(User $user)
+    {
+        return true;
+    }
+
+    public function update(User $user, Ticket $ticket)
     {
         if($user->tokenCan(Abilities::UPDATE_TICKET)){
             return true;
