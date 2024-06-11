@@ -4,7 +4,7 @@ namespace App\Http\Requests\Api\V1;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BaseTicketRequest extends FormRequest
+class BaseUserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -14,27 +14,22 @@ class BaseTicketRequest extends FormRequest
         return true;
     }
 
+
     public function mappedAttributes(array $otherAttributes = []): array
     {
         $attributeMap = array_merge([
-            'data.attributes.name' => 'name',
-            'data.attributes.email' => 'email',
-            'data.attributes.is_manager' => 'is_manager',
-            'data.attributes.password' => 'password',
+            'data.attributes.title' => 'title',
+            'data.attributes.description' => 'description',
+            'data.attributes.status' => 'status',
             'data.attributes.created_at' => 'created_at',
             'data.attributes.updated_at' => 'updated_at',
+            'data.relationships.user.data.id' => 'user_id',
         ], $otherAttributes);
 
         $attributesToUpdate = [];
-        foreach ($attributeMap as $key => $attribute) {
+        foreach ($attributeMap as $key => $value) {
             if ($this->has($key)) {
-
-                $value = $this->input($key);
-
-                if($attribute == 'password'){
-                    $value = bcrypt($value);
-                }
-                $attributesToUpdate[$attribute] = $value;
+                $attributesToUpdate[$value] = $this->input($key);
             }
         }
 

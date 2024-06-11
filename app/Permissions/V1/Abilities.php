@@ -18,6 +18,7 @@ final class Abilities
     public const CREATE_USER = 'user:create';
     public const UPDATE_USER = 'user:update';
     public const DELETE_USER = 'user:delete';
+    public const REPLACE_USER = 'user:replace';
 
     public static function getAbilities(User $user): array
     {
