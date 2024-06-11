@@ -18,17 +18,21 @@ class StoreTicketRequest extends BaseTicketRequest
     public function rules(): array
     {
         $authorIdAttribute = $this->routeIs('tickets.store') ? 'data.relationships.user.data.id' : 'author';
+        $user = $this->user();
+
+        $authorRule = 'required|integer|exists:users,id';
+
         $rules = [
             'data.attributes.title' => 'required|string',
             'data.attributes.description' => 'required|string',
             'data.attributes.status' => 'required|string|in:A,C,H,X',
-            $authorIdAttribute => 'required|integer|exists:users,id',
+            $authorIdAttribute => $authorRule.'|size:'. $user->id, // the author id should be the same as the logged in user, user can create ticket for himself
         ];
-        $user = $this->user();
+
 
         if($user->tokenCan(Abilities::CREATE_OWN_TICKET)){
-            // if the user has ability to create the ticket , then the author need to match the id of the loggedIn user
-            $rules[$authorIdAttribute] .= '|size:'. $user->id;
+            // if the user has ability to create the ticket , then it can create the ticket for any one
+            $rules[$authorIdAttribute] = $authorRule;
         }
 
         return $rules;
