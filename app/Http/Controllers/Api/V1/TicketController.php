@@ -18,7 +18,6 @@ use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class TicketController extends ApiController
 {
-
     protected $policyClass = TicketPolicy::class;
     /**
      * Display a listing of the resource.
@@ -48,7 +47,6 @@ class TicketController extends ApiController
         //        ];
 
         try {
-            $user = User::findOrFail($request->input('data.relationships.user.data.id'));
             $this->isAble('store', Ticket::class);
             return new TicketResource(Ticket::create($request->mappedAttributes()));
 

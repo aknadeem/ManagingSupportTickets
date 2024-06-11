@@ -17,22 +17,30 @@ class StoreTicketRequest extends BaseTicketRequest
 
     public function rules(): array
     {
+        $authorIdAttribute = $this->routeIs('tickets.store') ? 'data.relationships.user.data.id' : 'author';
         $rules = [
             'data.attributes.title' => 'required|string',
             'data.attributes.description' => 'required|string',
             'data.attributes.status' => 'required|string|in:A,C,H,X',
-            'data.relationships.user.data.id' => 'required|integer|exists:users,id',
+            $authorIdAttribute => 'required|integer|exists:users,id',
         ];
         $user = $this->user();
 
-        if($this->routeIs('tickets.store'))
-        {
-            if($user->tokenCan(Abilities::CREATE_OWN_TICKET)){
-                // if the user has ability to create the ticket , then the author need to match the id of the loggedIn user
-                $rules['data.relationships.user.data.id'] .= '|size:'. $user->id;
-            }
+        if($user->tokenCan(Abilities::CREATE_OWN_TICKET)){
+            // if the user has ability to create the ticket , then the author need to match the id of the loggedIn user
+            $rules[$authorIdAttribute] .= '|size:'. $user->id;
         }
+
         return $rules;
+    }
+
+    protected function prepareForValidation()
+    {
+        if ($this->routeIs('authors.tickets.store')) {
+            $this->merge([
+                'author' => $this->user()->id,
+            ]);
+        }
     }
 
 

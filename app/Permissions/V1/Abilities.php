@@ -9,6 +9,7 @@ final class Abilities
     public const CREATE_TICKET = 'ticket:create';
     public const UPDATE_TICKET = 'ticket:update';
     public const DELETE_TICKET = 'ticket:delete';
+    public const REPLACE_TICKET = 'ticket:replace';
 
     public const CREATE_OWN_TICKET = 'ticket:own:create';
     public const UPDATE_OWN_TICKET = 'ticket:own:update';
