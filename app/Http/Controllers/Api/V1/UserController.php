@@ -19,6 +19,16 @@ class UserController extends ApiController
 
     protected $policyClass = UserPolicy::class;
 
+    /**
+     * Get all users
+     *
+     * @group Managing Users
+     *
+     * @queryParam sort string Data field(s) to sort by. Separate multiple fields with commas. Denote descending sort with a minus sign. Example: sort=name
+     * @queryParam filter[name] Filter by status name. Wildcards are supported. No-example
+     * @queryParam filter[email] Filter by email. Wildcards are supported. No-example
+     *
+     */
     public function index(AuthorFilter $filters)
     {
         return UserResource::collection(
@@ -32,6 +42,13 @@ class UserController extends ApiController
 //        return UserResource::collection(User::paginate());
 //    }
 
+    /**
+     * Create a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {"data":{"type":"user","id":16,"attributes":{"name":"My User","email":"user@user.com","isManager":false},"links":{"self":"http:\/\/localhost:8000\/api\/v1\/authors\/16"}}}
+     */
     public function store(StoreUserRequest $request)
     {
         try {
@@ -45,7 +62,11 @@ class UserController extends ApiController
     }
 
     /**
-     * Display the specified resource.
+     * Display a user
+     *
+     * @group Managing Users
+     *
+     *
      */
     public function show(User $user)
     {
@@ -58,25 +79,30 @@ class UserController extends ApiController
 
 
     /**
-     * Update the specified resource in storage.
+     * Update a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {"data":{"type":"user","id":16,"attributes":{"name":"My User","email":"user@user.com","isManager":false},"links":{"self":"http:\/\/localhost:8000\/api\/v1\/authors\/16"}}}
      */
-    public function update(UpdateUserRequest $request, $userId)
+    public function update(UpdateUserRequest $request, User $user)
     {
-        try {
-            $user = User::findOrFail($userId);
-
-            $this->isAble('update', $user);
-
+        if ($this->isAble('update', $user)) {
             $user->update($request->mappedAttributes());
 
             return new UserResource($user);
-
-        } catch (ModelNotFoundException $e) {
-            return $this->responseError('User cannot be found', 404);
-        } catch (AuthorizationException $e) {
-            return $this->responseError('You are not authorized to update that resource', 401);
         }
+        return $this->responseError('You are not authorized to update that resource', 401);
+
     }
+
+    /**
+     * Replace a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {"data":{"type":"user","id":16,"attributes":{"name":"My User","email":"user@user.com","isManager":false},"links":{"self":"http:\/\/localhost:8000\/api\/v1\/authors\/16"}}}
+     */
 
     public function replace(UpdateUserRequest $request, $userId)
     {
@@ -95,16 +121,20 @@ class UserController extends ApiController
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {}
      */
-    public function destroy($userId)
+    public function destroy(User $user)
     {
-        try {
-            $user = User::findOrFail($userId);
+        if ($this->isAble('delete', $user)) {
             $user->delete();
-            return $this->responseOk('User deleted successfully');
-        } catch (ModelNotFoundException $e) {
-            return $this->responseError('User not found', 404);
+
+            return $this->responseOk('User successfully deleted');
         }
+
+        return $this->responseError('You are not authorized to delete that resource', 401);
     }
 }

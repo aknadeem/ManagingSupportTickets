@@ -4,6 +4,7 @@ namespace App\Http\Requests\Api\V1;
 
 use App\Permissions\V1\Abilities;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class UpdateTicketRequest extends BaseTicketRequest
 {
@@ -24,7 +25,7 @@ class UpdateTicketRequest extends BaseTicketRequest
             'data.relationships.user.data.id' => 'prohibited',
         ];
 
-        if($this->user()->tokenCan(Abilities::UPDATE_OWN_TICKET)){
+        if(Auth::user()->tokenCan(Abilities::UPDATE_OWN_TICKET)){
             $rules['data.relationships.user.data.id'] = 'sometimes|integer';
         }
 
