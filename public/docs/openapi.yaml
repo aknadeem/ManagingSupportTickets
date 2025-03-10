@@ -1,11 +1,11 @@
 openapi: 3.0.3
 info:
-  title: 'Tickets Please API Documentation'
+  title: 'Support Tickets API Documentation'
   description: ''
   version: 1.0.0
 servers:
   -
-    url: 'http://localhost'
+    url: 'http://masterlaravelapi.test'
 paths:
   /api/login:
     post:
@@ -34,11 +34,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: efritsch@example.com
+                  example: pouros.garrison@example.net
                 password:
                   type: string
                   description: 'Must be at least 8 characters.'
-                  example: 'ebq~uELlU"g'
+                  example: 'o@Hh]y=7cF}~Ce#J'
               required:
                 - email
                 - password
@@ -614,9 +614,9 @@ paths:
                             type: user
                             id: 5
                           links:
-                            self: 'http://localhost/api/v1/authors/5'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/5'
                       links:
-                        self: 'http://localhost/api/v1/tickets/1'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/1'
                     -
                       type: ticket
                       id: 2
@@ -632,9 +632,9 @@ paths:
                             type: user
                             id: 9
                           links:
-                            self: 'http://localhost/api/v1/authors/9'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/9'
                       links:
-                        self: 'http://localhost/api/v1/tickets/2'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/2'
                     -
                       type: ticket
                       id: 3
@@ -650,9 +650,9 @@ paths:
                             type: user
                             id: 6
                           links:
-                            self: 'http://localhost/api/v1/authors/6'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/6'
                       links:
-                        self: 'http://localhost/api/v1/tickets/3'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/3'
                     -
                       type: ticket
                       id: 4
@@ -668,9 +668,9 @@ paths:
                             type: user
                             id: 7
                           links:
-                            self: 'http://localhost/api/v1/authors/7'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/7'
                       links:
-                        self: 'http://localhost/api/v1/tickets/4'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/4'
                     -
                       type: ticket
                       id: 5
@@ -686,9 +686,9 @@ paths:
                             type: user
                             id: 2
                           links:
-                            self: 'http://localhost/api/v1/authors/2'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/2'
                       links:
-                        self: 'http://localhost/api/v1/tickets/5'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/5'
                     -
                       type: ticket
                       id: 6
@@ -704,9 +704,9 @@ paths:
                             type: user
                             id: 4
                           links:
-                            self: 'http://localhost/api/v1/authors/4'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/4'
                       links:
-                        self: 'http://localhost/api/v1/tickets/6'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/6'
                     -
                       type: ticket
                       id: 7
@@ -722,9 +722,9 @@ paths:
                             type: user
                             id: 2
                           links:
-                            self: 'http://localhost/api/v1/authors/2'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/2'
                       links:
-                        self: 'http://localhost/api/v1/tickets/7'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/7'
                     -
                       type: ticket
                       id: 8
@@ -740,9 +740,9 @@ paths:
                             type: user
                             id: 10
                           links:
-                            self: 'http://localhost/api/v1/authors/10'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/10'
                       links:
-                        self: 'http://localhost/api/v1/tickets/8'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/8'
                     -
                       type: ticket
                       id: 9
@@ -758,9 +758,9 @@ paths:
                             type: user
                             id: 4
                           links:
-                            self: 'http://localhost/api/v1/authors/4'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/4'
                       links:
-                        self: 'http://localhost/api/v1/tickets/9'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/9'
                     -
                       type: ticket
                       id: 10
@@ -776,9 +776,9 @@ paths:
                             type: user
                             id: 4
                           links:
-                            self: 'http://localhost/api/v1/authors/4'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/4'
                       links:
-                        self: 'http://localhost/api/v1/tickets/10'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/10'
                     -
                       type: ticket
                       id: 11
@@ -794,9 +794,9 @@ paths:
                             type: user
                             id: 8
                           links:
-                            self: 'http://localhost/api/v1/authors/8'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/8'
                       links:
-                        self: 'http://localhost/api/v1/tickets/11'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/11'
                     -
                       type: ticket
                       id: 12
@@ -812,9 +812,9 @@ paths:
                             type: user
                             id: 7
                           links:
-                            self: 'http://localhost/api/v1/authors/7'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/7'
                       links:
-                        self: 'http://localhost/api/v1/tickets/12'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/12'
                     -
                       type: ticket
                       id: 13
@@ -830,9 +830,9 @@ paths:
                             type: user
                             id: 3
                           links:
-                            self: 'http://localhost/api/v1/authors/3'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/3'
                       links:
-                        self: 'http://localhost/api/v1/tickets/13'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/13'
                     -
                       type: ticket
                       id: 14
@@ -848,9 +848,9 @@ paths:
                             type: user
                             id: 6
                           links:
-                            self: 'http://localhost/api/v1/authors/6'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/6'
                       links:
-                        self: 'http://localhost/api/v1/tickets/14'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/14'
                     -
                       type: ticket
                       id: 15
@@ -866,14 +866,14 @@ paths:
                             type: user
                             id: 5
                           links:
-                            self: 'http://localhost/api/v1/authors/5'
+                            self: 'http://masterlaravelapi.test/api/v1/authors/5'
                       links:
-                        self: 'http://localhost/api/v1/tickets/15'
+                        self: 'http://masterlaravelapi.test/api/v1/tickets/15'
                   links:
-                    first: 'http://localhost/api/v1/tickets?page=1'
-                    last: 'http://localhost/api/v1/tickets?page=4'
+                    first: 'http://masterlaravelapi.test/api/v1/tickets?page=1'
+                    last: 'http://masterlaravelapi.test/api/v1/tickets?page=4'
                     prev: null
-                    next: 'http://localhost/api/v1/tickets?page=2'
+                    next: 'http://masterlaravelapi.test/api/v1/tickets?page=2'
                   meta:
                     current_page: 1
                     from: 1
@@ -884,26 +884,26 @@ paths:
                         label: '&laquo; Previous'
                         active: false
                       -
-                        url: 'http://localhost/api/v1/tickets?page=1'
+                        url: 'http://masterlaravelapi.test/api/v1/tickets?page=1'
                         label: '1'
                         active: true
                       -
-                        url: 'http://localhost/api/v1/tickets?page=2'
+                        url: 'http://masterlaravelapi.test/api/v1/tickets?page=2'
                         label: '2'
                         active: false
                       -
-                        url: 'http://localhost/api/v1/tickets?page=3'
+                        url: 'http://masterlaravelapi.test/api/v1/tickets?page=3'
                         label: '3'
                         active: false
                       -
-                        url: 'http://localhost/api/v1/tickets?page=4'
+                        url: 'http://masterlaravelapi.test/api/v1/tickets?page=4'
                         label: '4'
                         active: false
                       -
-                        url: 'http://localhost/api/v1/tickets?page=2'
+                        url: 'http://masterlaravelapi.test/api/v1/tickets?page=2'
                         label: 'Next &raquo;'
                         active: false
-                    path: 'http://localhost/api/v1/tickets'
+                    path: 'http://masterlaravelapi.test/api/v1/tickets'
                     per_page: 15
                     to: 15
                     total: 54
@@ -926,9 +926,9 @@ paths:
                               type: user
                               id: 5
                             links:
-                              self: 'http://localhost/api/v1/authors/5'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/5'
                         links:
-                          self: 'http://localhost/api/v1/tickets/1'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/1'
                       -
                         type: ticket
                         id: 2
@@ -944,9 +944,9 @@ paths:
                               type: user
                               id: 9
                             links:
-                              self: 'http://localhost/api/v1/authors/9'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/9'
                         links:
-                          self: 'http://localhost/api/v1/tickets/2'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/2'
                       -
                         type: ticket
                         id: 3
@@ -962,9 +962,9 @@ paths:
                               type: user
                               id: 6
                             links:
-                              self: 'http://localhost/api/v1/authors/6'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/6'
                         links:
-                          self: 'http://localhost/api/v1/tickets/3'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/3'
                       -
                         type: ticket
                         id: 4
@@ -980,9 +980,9 @@ paths:
                               type: user
                               id: 7
                             links:
-                              self: 'http://localhost/api/v1/authors/7'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/7'
                         links:
-                          self: 'http://localhost/api/v1/tickets/4'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/4'
                       -
                         type: ticket
                         id: 5
@@ -998,9 +998,9 @@ paths:
                               type: user
                               id: 2
                             links:
-                              self: 'http://localhost/api/v1/authors/2'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/2'
                         links:
-                          self: 'http://localhost/api/v1/tickets/5'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/5'
                       -
                         type: ticket
                         id: 6
@@ -1016,9 +1016,9 @@ paths:
                               type: user
                               id: 4
                             links:
-                              self: 'http://localhost/api/v1/authors/4'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/4'
                         links:
-                          self: 'http://localhost/api/v1/tickets/6'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/6'
                       -
                         type: ticket
                         id: 7
@@ -1034,9 +1034,9 @@ paths:
                               type: user
                               id: 2
                             links:
-                              self: 'http://localhost/api/v1/authors/2'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/2'
                         links:
-                          self: 'http://localhost/api/v1/tickets/7'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/7'
                       -
                         type: ticket
                         id: 8
@@ -1052,9 +1052,9 @@ paths:
                               type: user
                               id: 10
                             links:
-                              self: 'http://localhost/api/v1/authors/10'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/10'
                         links:
-                          self: 'http://localhost/api/v1/tickets/8'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/8'
                       -
                         type: ticket
                         id: 9
@@ -1070,9 +1070,9 @@ paths:
                               type: user
                               id: 4
                             links:
-                              self: 'http://localhost/api/v1/authors/4'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/4'
                         links:
-                          self: 'http://localhost/api/v1/tickets/9'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/9'
                       -
                         type: ticket
                         id: 10
@@ -1088,9 +1088,9 @@ paths:
                               type: user
                               id: 4
                             links:
-                              self: 'http://localhost/api/v1/authors/4'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/4'
                         links:
-                          self: 'http://localhost/api/v1/tickets/10'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/10'
                       -
                         type: ticket
                         id: 11
@@ -1106,9 +1106,9 @@ paths:
                               type: user
                               id: 8
                             links:
-                              self: 'http://localhost/api/v1/authors/8'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/8'
                         links:
-                          self: 'http://localhost/api/v1/tickets/11'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/11'
                       -
                         type: ticket
                         id: 12
@@ -1124,9 +1124,9 @@ paths:
                               type: user
                               id: 7
                             links:
-                              self: 'http://localhost/api/v1/authors/7'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/7'
                         links:
-                          self: 'http://localhost/api/v1/tickets/12'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/12'
                       -
                         type: ticket
                         id: 13
@@ -1142,9 +1142,9 @@ paths:
                               type: user
                               id: 3
                             links:
-                              self: 'http://localhost/api/v1/authors/3'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/3'
                         links:
-                          self: 'http://localhost/api/v1/tickets/13'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/13'
                       -
                         type: ticket
                         id: 14
@@ -1160,9 +1160,9 @@ paths:
                               type: user
                               id: 6
                             links:
-                              self: 'http://localhost/api/v1/authors/6'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/6'
                         links:
-                          self: 'http://localhost/api/v1/tickets/14'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/14'
                       -
                         type: ticket
                         id: 15
@@ -1178,9 +1178,9 @@ paths:
                               type: user
                               id: 5
                             links:
-                              self: 'http://localhost/api/v1/authors/5'
+                              self: 'http://masterlaravelapi.test/api/v1/authors/5'
                         links:
-                          self: 'http://localhost/api/v1/tickets/15'
+                          self: 'http://masterlaravelapi.test/api/v1/tickets/15'
                     items:
                       type: object
                       properties:
@@ -1228,28 +1228,28 @@ paths:
                                   properties:
                                     self:
                                       type: string
-                                      example: 'http://localhost/api/v1/authors/5'
+                                      example: 'http://masterlaravelapi.test/api/v1/authors/5'
                         links:
                           type: object
                           properties:
                             self:
                               type: string
-                              example: 'http://localhost/api/v1/tickets/1'
+                              example: 'http://masterlaravelapi.test/api/v1/tickets/1'
                   links:
                     type: object
                     properties:
                       first:
                         type: string
-                        example: 'http://localhost/api/v1/tickets?page=1'
+                        example: 'http://masterlaravelapi.test/api/v1/tickets?page=1'
                       last:
                         type: string
-                        example: 'http://localhost/api/v1/tickets?page=4'
+                        example: 'http://masterlaravelapi.test/api/v1/tickets?page=4'
                       prev:
                         type: string
                         example: null
                       next:
                         type: string
-                        example: 'http://localhost/api/v1/tickets?page=2'
+                        example: 'http://masterlaravelapi.test/api/v1/tickets?page=2'
                   meta:
                     type: object
                     properties:
@@ -1270,23 +1270,23 @@ paths:
                             label: '&laquo; Previous'
                             active: false
                           -
-                            url: 'http://localhost/api/v1/tickets?page=1'
+                            url: 'http://masterlaravelapi.test/api/v1/tickets?page=1'
                             label: '1'
                             active: true
                           -
-                            url: 'http://localhost/api/v1/tickets?page=2'
+                            url: 'http://masterlaravelapi.test/api/v1/tickets?page=2'
                             label: '2'
                             active: false
                           -
-                            url: 'http://localhost/api/v1/tickets?page=3'
+                            url: 'http://masterlaravelapi.test/api/v1/tickets?page=3'
                             label: '3'
                             active: false
                           -
-                            url: 'http://localhost/api/v1/tickets?page=4'
+                            url: 'http://masterlaravelapi.test/api/v1/tickets?page=4'
                             label: '4'
                             active: false
                           -
-                            url: 'http://localhost/api/v1/tickets?page=2'
+                            url: 'http://masterlaravelapi.test/api/v1/tickets?page=2'
                             label: 'Next &raquo;'
                             active: false
                         items:
@@ -1303,7 +1303,7 @@ paths:
                               example: false
                       path:
                         type: string
-                        example: 'http://localhost/api/v1/tickets'
+                        example: 'http://masterlaravelapi.test/api/v1/tickets'
                       per_page:
                         type: integer
                         example: 15
@@ -1486,9 +1486,9 @@ paths:
                           type: user
                           id: 5
                         links:
-                          self: 'http://localhost/api/v1/authors/5'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/5'
                     links:
-                      self: 'http://localhost/api/v1/tickets/1'
+                      self: 'http://masterlaravelapi.test/api/v1/tickets/1'
                 properties:
                   data:
                     type: object
@@ -1534,13 +1534,13 @@ paths:
                                 properties:
                                   self:
                                     type: string
-                                    example: 'http://localhost/api/v1/authors/5'
+                                    example: 'http://masterlaravelapi.test/api/v1/authors/5'
                       links:
                         type: object
                         properties:
                           self:
                             type: string
-                            example: 'http://localhost/api/v1/tickets/1'
+                            example: 'http://masterlaravelapi.test/api/v1/tickets/1'
       tags:
         - 'Managing Tickets'
     delete:
@@ -1589,15 +1589,15 @@ paths:
                         title:
                           type: string
                           description: ''
-                          example: facere
+                          example: quia
                         description:
                           type: string
                           description: ''
-                          example: 'Earum sit quia consequatur est et et nihil.'
+                          example: 'Rerum qui eum sit ut officiis dolorem illum.'
                         status:
                           type: string
                           description: ''
-                          example: X
+                          example: C
                           enum:
                             - A
                             - C
@@ -1621,7 +1621,7 @@ paths:
                                 id:
                                   type: integer
                                   description: ''
-                                  example: 9
+                                  example: 1
     patch:
       summary: 'Update Ticket'
       operationId: updateTicket
@@ -1650,15 +1650,15 @@ paths:
                         title:
                           type: string
                           description: ''
-                          example: natus
+                          example: reiciendis
                         description:
                           type: string
                           description: ''
-                          example: 'Ipsam quia voluptas facere omnis ex et.'
+                          example: 'Rerum neque delectus ullam fugiat dolor.'
                         status:
                           type: string
                           description: ''
-                          example: A
+                          example: X
                           enum:
                             - A
                             - C
@@ -1682,7 +1682,7 @@ paths:
                                 id:
                                   type: integer
                                   description: ''
-                                  example: 17
+                                  example: 20
     parameters:
       -
         in: path
@@ -1712,22 +1712,22 @@ paths:
           in: query
           name: 'filter[name]'
           description: 'Filter by name. Wildcards are supported.'
-          example: debitis
+          example: quos
           required: false
           schema:
             type: string
             description: 'Filter by name. Wildcards are supported.'
-            example: debitis
+            example: quos
         -
           in: query
           name: 'filter[email]'
           description: 'Filter by email. Wildcards are supported.'
-          example: culpa
+          example: aut
           required: false
           schema:
             type: string
             description: 'Filter by email. Wildcards are supported.'
-            example: culpa
+            example: aut
       responses:
         200:
           description: ''
@@ -2096,15 +2096,15 @@ paths:
                         title:
                           type: string
                           description: ''
-                          example: amet
+                          example: molestiae
                         description:
                           type: string
                           description: ''
-                          example: 'Ipsa non sint et autem nihil praesentium.'
+                          example: 'Id iste ex placeat nisi dolorum quae saepe.'
                         status:
                           type: string
                           description: ''
-                          example: C
+                          example: H
                           enum:
                             - A
                             - C
@@ -2128,7 +2128,7 @@ paths:
                                 id:
                                   type: integer
                                   description: ''
-                                  example: 8
+                                  example: 1
     patch:
       summary: "Replace an author's ticket"
       operationId: replaceAnAuthorsTicket
@@ -2237,15 +2237,15 @@ paths:
                         title:
                           type: string
                           description: ''
-                          example: aut
+                          example: nobis
                         description:
                           type: string
                           description: ''
-                          example: 'Saepe velit necessitatibus facere aspernatur.'
+                          example: 'Quo quos ullam facilis nulla enim voluptatem.'
                         status:
                           type: string
                           description: ''
-                          example: H
+                          example: A
                           enum:
                             - A
                             - C
@@ -2269,13 +2269,13 @@ paths:
                                 id:
                                   type: integer
                                   description: ''
-                                  example: 17
+                                  example: 11
     parameters:
       -
         in: path
         name: author
         description: 'The author.'
-        example: distinctio
+        example: omnis
         required: true
         schema:
           type: string
@@ -2361,7 +2361,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/1'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/1'
                     -
                       type: user
                       id: 2
@@ -2375,7 +2375,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/2'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/2'
                     -
                       type: user
                       id: 3
@@ -2389,7 +2389,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/3'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/3'
                     -
                       type: user
                       id: 4
@@ -2403,7 +2403,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/4'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/4'
                     -
                       type: user
                       id: 5
@@ -2417,7 +2417,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/5'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/5'
                     -
                       type: user
                       id: 6
@@ -2431,7 +2431,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/6'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/6'
                     -
                       type: user
                       id: 7
@@ -2445,7 +2445,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/7'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/7'
                     -
                       type: user
                       id: 8
@@ -2459,7 +2459,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/8'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/8'
                     -
                       type: user
                       id: 9
@@ -2473,7 +2473,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/9'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/9'
                     -
                       type: user
                       id: 10
@@ -2487,7 +2487,7 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/10'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/10'
                     -
                       type: user
                       id: 11
@@ -2501,10 +2501,10 @@ paths:
                             updated_at: '2024-06-10T23:04:30.000000Z'
                             createdAt: '2024-06-10T23:04:30.000000Z'
                       links:
-                        self: 'http://localhost/api/v1/authors/11'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/11'
                   links:
-                    first: 'http://localhost/api/v1/authors?page=1'
-                    last: 'http://localhost/api/v1/authors?page=1'
+                    first: 'http://masterlaravelapi.test/api/v1/authors?page=1'
+                    last: 'http://masterlaravelapi.test/api/v1/authors?page=1'
                     prev: null
                     next: null
                   meta:
@@ -2517,14 +2517,14 @@ paths:
                         label: '&laquo; Previous'
                         active: false
                       -
-                        url: 'http://localhost/api/v1/authors?page=1'
+                        url: 'http://masterlaravelapi.test/api/v1/authors?page=1'
                         label: '1'
                         active: true
                       -
                         url: null
                         label: 'Next &raquo;'
                         active: false
-                    path: 'http://localhost/api/v1/authors'
+                    path: 'http://masterlaravelapi.test/api/v1/authors'
                     per_page: 15
                     to: 11
                     total: 11
@@ -2545,7 +2545,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/1'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/1'
                       -
                         type: user
                         id: 2
@@ -2559,7 +2559,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/2'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/2'
                       -
                         type: user
                         id: 3
@@ -2573,7 +2573,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/3'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/3'
                       -
                         type: user
                         id: 4
@@ -2587,7 +2587,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/4'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/4'
                       -
                         type: user
                         id: 5
@@ -2601,7 +2601,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/5'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/5'
                       -
                         type: user
                         id: 6
@@ -2615,7 +2615,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/6'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/6'
                       -
                         type: user
                         id: 7
@@ -2629,7 +2629,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/7'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/7'
                       -
                         type: user
                         id: 8
@@ -2643,7 +2643,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/8'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/8'
                       -
                         type: user
                         id: 9
@@ -2657,7 +2657,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/9'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/9'
                       -
                         type: user
                         id: 10
@@ -2671,7 +2671,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/10'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/10'
                       -
                         type: user
                         id: 11
@@ -2685,7 +2685,7 @@ paths:
                               updated_at: '2024-06-10T23:04:30.000000Z'
                               createdAt: '2024-06-10T23:04:30.000000Z'
                         links:
-                          self: 'http://localhost/api/v1/authors/11'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/11'
                     items:
                       type: object
                       properties:
@@ -2727,16 +2727,16 @@ paths:
                           properties:
                             self:
                               type: string
-                              example: 'http://localhost/api/v1/authors/1'
+                              example: 'http://masterlaravelapi.test/api/v1/authors/1'
                   links:
                     type: object
                     properties:
                       first:
                         type: string
-                        example: 'http://localhost/api/v1/authors?page=1'
+                        example: 'http://masterlaravelapi.test/api/v1/authors?page=1'
                       last:
                         type: string
-                        example: 'http://localhost/api/v1/authors?page=1'
+                        example: 'http://masterlaravelapi.test/api/v1/authors?page=1'
                       prev:
                         type: string
                         example: null
@@ -2763,7 +2763,7 @@ paths:
                             label: '&laquo; Previous'
                             active: false
                           -
-                            url: 'http://localhost/api/v1/authors?page=1'
+                            url: 'http://masterlaravelapi.test/api/v1/authors?page=1'
                             label: '1'
                             active: true
                           -
@@ -2784,7 +2784,7 @@ paths:
                               example: false
                       path:
                         type: string
-                        example: 'http://localhost/api/v1/authors'
+                        example: 'http://masterlaravelapi.test/api/v1/authors'
                       per_page:
                         type: integer
                         example: 15
@@ -3717,7 +3717,7 @@ paths:
                         email: awunsch@example.net
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/1'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/1'
                     -
                       type: user
                       id: 2
@@ -3726,7 +3726,7 @@ paths:
                         email: pete.lakin@example.net
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/2'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/2'
                     -
                       type: user
                       id: 3
@@ -3735,7 +3735,7 @@ paths:
                         email: jast.mustafa@example.net
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/3'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/3'
                     -
                       type: user
                       id: 4
@@ -3744,7 +3744,7 @@ paths:
                         email: nathaniel79@example.net
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/4'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/4'
                     -
                       type: user
                       id: 5
@@ -3753,7 +3753,7 @@ paths:
                         email: lakin.titus@example.org
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/5'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/5'
                     -
                       type: user
                       id: 6
@@ -3762,7 +3762,7 @@ paths:
                         email: oromaguera@example.com
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/6'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/6'
                     -
                       type: user
                       id: 7
@@ -3771,7 +3771,7 @@ paths:
                         email: tlittle@example.org
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/7'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/7'
                     -
                       type: user
                       id: 8
@@ -3780,7 +3780,7 @@ paths:
                         email: ocrist@example.org
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/8'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/8'
                     -
                       type: user
                       id: 9
@@ -3789,7 +3789,7 @@ paths:
                         email: reilly.anne@example.net
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/9'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/9'
                     -
                       type: user
                       id: 10
@@ -3798,7 +3798,7 @@ paths:
                         email: koepp.tyree@example.net
                         is_manager: false
                       links:
-                        self: 'http://localhost/api/v1/authors/10'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/10'
                     -
                       type: user
                       id: 11
@@ -3807,10 +3807,10 @@ paths:
                         email: manager@manager.com
                         is_manager: true
                       links:
-                        self: 'http://localhost/api/v1/authors/11'
+                        self: 'http://masterlaravelapi.test/api/v1/authors/11'
                   links:
-                    first: 'http://localhost/api/v1/users?page=1'
-                    last: 'http://localhost/api/v1/users?page=1'
+                    first: 'http://masterlaravelapi.test/api/v1/users?page=1'
+                    last: 'http://masterlaravelapi.test/api/v1/users?page=1'
                     prev: null
                     next: null
                   meta:
@@ -3823,14 +3823,14 @@ paths:
                         label: '&laquo; Previous'
                         active: false
                       -
-                        url: 'http://localhost/api/v1/users?page=1'
+                        url: 'http://masterlaravelapi.test/api/v1/users?page=1'
                         label: '1'
                         active: true
                       -
                         url: null
                         label: 'Next &raquo;'
                         active: false
-                    path: 'http://localhost/api/v1/users'
+                    path: 'http://masterlaravelapi.test/api/v1/users'
                     per_page: 15
                     to: 11
                     total: 11
@@ -3846,7 +3846,7 @@ paths:
                           email: awunsch@example.net
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/1'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/1'
                       -
                         type: user
                         id: 2
@@ -3855,7 +3855,7 @@ paths:
                           email: pete.lakin@example.net
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/2'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/2'
                       -
                         type: user
                         id: 3
@@ -3864,7 +3864,7 @@ paths:
                           email: jast.mustafa@example.net
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/3'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/3'
                       -
                         type: user
                         id: 4
@@ -3873,7 +3873,7 @@ paths:
                           email: nathaniel79@example.net
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/4'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/4'
                       -
                         type: user
                         id: 5
@@ -3882,7 +3882,7 @@ paths:
                           email: lakin.titus@example.org
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/5'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/5'
                       -
                         type: user
                         id: 6
@@ -3891,7 +3891,7 @@ paths:
                           email: oromaguera@example.com
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/6'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/6'
                       -
                         type: user
                         id: 7
@@ -3900,7 +3900,7 @@ paths:
                           email: tlittle@example.org
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/7'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/7'
                       -
                         type: user
                         id: 8
@@ -3909,7 +3909,7 @@ paths:
                           email: ocrist@example.org
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/8'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/8'
                       -
                         type: user
                         id: 9
@@ -3918,7 +3918,7 @@ paths:
                           email: reilly.anne@example.net
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/9'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/9'
                       -
                         type: user
                         id: 10
@@ -3927,7 +3927,7 @@ paths:
                           email: koepp.tyree@example.net
                           is_manager: false
                         links:
-                          self: 'http://localhost/api/v1/authors/10'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/10'
                       -
                         type: user
                         id: 11
@@ -3936,7 +3936,7 @@ paths:
                           email: manager@manager.com
                           is_manager: true
                         links:
-                          self: 'http://localhost/api/v1/authors/11'
+                          self: 'http://masterlaravelapi.test/api/v1/authors/11'
                     items:
                       type: object
                       properties:
@@ -3963,16 +3963,16 @@ paths:
                           properties:
                             self:
                               type: string
-                              example: 'http://localhost/api/v1/authors/1'
+                              example: 'http://masterlaravelapi.test/api/v1/authors/1'
                   links:
                     type: object
                     properties:
                       first:
                         type: string
-                        example: 'http://localhost/api/v1/users?page=1'
+                        example: 'http://masterlaravelapi.test/api/v1/users?page=1'
                       last:
                         type: string
-                        example: 'http://localhost/api/v1/users?page=1'
+                        example: 'http://masterlaravelapi.test/api/v1/users?page=1'
                       prev:
                         type: string
                         example: null
@@ -3999,7 +3999,7 @@ paths:
                             label: '&laquo; Previous'
                             active: false
                           -
-                            url: 'http://localhost/api/v1/users?page=1'
+                            url: 'http://masterlaravelapi.test/api/v1/users?page=1'
                             label: '1'
                             active: true
                           -
@@ -4020,7 +4020,7 @@ paths:
                               example: false
                       path:
                         type: string
-                        example: 'http://localhost/api/v1/users'
+                        example: 'http://masterlaravelapi.test/api/v1/users'
                       per_page:
                         type: integer
                         example: 15
@@ -4104,19 +4104,19 @@ paths:
                         name:
                           type: string
                           description: ''
-                          example: quaerat
+                          example: sed
                         email:
                           type: string
                           description: 'Must be a valid email address.'
-                          example: josefa.hoeger@example.com
+                          example: cpredovic@example.org
                         password:
                           type: string
                           description: ''
-                          example: "&o'Wh{j&jl[w-A|o"
+                          example: '[l.RaUU)zJsII]Vs'
                         is_manager:
                           type: boolean
                           description: ''
-                          example: true
+                          example: false
   '/api/v1/users/{id}':
     get:
       summary: 'Display a user'
@@ -4139,7 +4139,7 @@ paths:
                       email: awunsch@example.net
                       is_manager: false
                     links:
-                      self: 'http://localhost/api/v1/authors/1'
+                      self: 'http://masterlaravelapi.test/api/v1/authors/1'
                 properties:
                   data:
                     type: object
@@ -4167,7 +4167,7 @@ paths:
                         properties:
                           self:
                             type: string
-                            example: 'http://localhost/api/v1/authors/1'
+                            example: 'http://masterlaravelapi.test/api/v1/authors/1'
       tags:
         - 'Managing Users'
     delete:
@@ -4268,11 +4268,11 @@ paths:
                         name:
                           type: string
                           description: ''
-                          example: rem
+                          example: soluta
                         email:
                           type: string
                           description: 'Must be a valid email address.'
-                          example: keely.wiza@example.net
+                          example: keebler.jermain@example.org
                         is_manager:
                           type: boolean
                           description: ''
@@ -4280,7 +4280,7 @@ paths:
                         password:
                           type: string
                           description: ''
-                          example: 7Rx)Xfh
+                          example: '_<Q2p2,-dam'
     parameters:
       -
         in: path
@@ -4363,19 +4363,19 @@ paths:
                         name:
                           type: string
                           description: ''
-                          example: et
+                          example: dicta
                         email:
                           type: string
                           description: 'Must be a valid email address.'
-                          example: marques.kshlerin@example.com
+                          example: rath.joanny@example.org
                         is_manager:
                           type: boolean
                           description: ''
-                          example: true
+                          example: false
                         password:
                           type: string
                           description: ''
-                          example: 'H}\\5xg'
+                          example: '5%9EYRmp|",'
     parameters:
       -
         in: path
