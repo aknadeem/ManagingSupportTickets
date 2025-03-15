@@ -1,6 +1,6 @@
 # 🚀 Managing Support Tickets
 
-A Laravel-based system for managing support tickets with API functionality. This project demonstrates how to **design**, **version**, **build**, and **protect** a web API using **Laravel**. We'll begin from scratch with a basic Laravel project and construct a fully-featured API.
+A Laravel-based system for managing support tickets with API functionality. This project demonstrates how to **design**, **version**, **build**, and **protect** a web API using **Laravel Sanctum**.
 
 ## 🏆 Features
 - ✅ **Ticket Management**: Create and manage support tickets effortlessly.
